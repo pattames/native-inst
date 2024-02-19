@@ -3,6 +3,7 @@ import style from "../components/modules/Community.module.css"
 export default function Community() {
   return (
     <>
+      <Navbar />
     <header className={style.commheader}>
       <h2 className={style.heading}>Community</h2>
       <p className={style["first-paragraph"]}>

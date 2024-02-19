@@ -3,6 +3,8 @@ import style from "./modules/Products.module.css";
 
 export default function Products() {
   return (
+    <>
+    <Navbar />
     <div className={style.products}>
       <div className={style.productSection}>
         <nav className={style.navSticky}>
@@ -337,5 +339,6 @@ For something a little bit simpler, KOMPLETE 14 SELECT offers the essentials of 
 
       </div>
     </div>
+</>
   );
 }

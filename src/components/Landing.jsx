@@ -1,8 +1,39 @@
+import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
+import styles from "./modules/Landing.module.css";
+import { createClient } from "contentful";
+import CatalogCard from "./CatalogCard";
+
 //Patricio
 export default function Landing() {
+  const client = createClient({
+    space: "snc9ypjoto09",
+    accessToken: "8xleQ_2CFlvZjKRsMi0UNdrB5Ak1LPZGvx5UquSaclY",
+  });
+
+  const [catalog, setCatalog] = useState([]);
+  useEffect(() => {
+    const getCatalog = async () => {
+      const entryItems = await client.getEntries();
+      console.log(entryItems.items);
+      setCatalog(entryItems.items);
+    };
+
+    getCatalog();
+  }, []);
+
   return (
     <>
-      <h2>Landing</h2>
+      <Navbar />
+      <div className={styles.hero}>
+        <video src="../public/Trimmed.mp4"></video>
+      </div>
+      <div className={styles.catalog}>
+        {catalog.map((card) => (
+          <CatalogCard key={card.sys.id} catalog={catalog} />
+        ))}
+      </div>
+      <div className={styles.products}></div>
     </>
   );
 }
