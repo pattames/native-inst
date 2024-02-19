@@ -8,7 +8,6 @@ import Support from "./components/Support";
 function App() {
   return (
     <>
-      <h1>Native</h1>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="" element={<Products />} />
