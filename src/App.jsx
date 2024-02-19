@@ -8,12 +8,12 @@ import Support from "./components/Support";
 function App() {
   return (
     <>
-      <h1>Native</h1>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="" element={<Products />} />
+        <Route path="catalog" element={<Products />} />
         <Route path="community" element={<Community />} />
         <Route path="support" element={<Support />} />
+
       </Routes>
     </>
   );

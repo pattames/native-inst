@@ -1,0 +1,212 @@
+.products{
+  background-color: #f5f5f5;
+}
+
+.newProductsDiv {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.navSticky{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: #3e3e3e;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  color: rgb(68, 146, 235);
+}
+
+.newProductsHeader {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 16px;
+}
+
+.newProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+}
+
+.newProducts img {
+  width: 326px;
+  height: 255px;
+}
+
+.newProducts img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 326px;
+  height: 400px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.cards:hover {
+  cursor: pointer;
+}
+
+.cardH2Para {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.cards h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.cards p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.CardPrice {
+  margin-top: 2px;
+  background-color:white;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2.7rem;
+}
+
+.cardwith2Price {
+  margin-top: 2px;
+  display: flex;
+  gap: 2px;
+  justify-content: space-around;
+  padding: 0.2rem;
+}
+
+.cardwith2Price span {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.Card2Price {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1.65rem;
+  background-color: white;
+  width: 160px;
+  height: 70px;
+}
+
+.spanParaGreen {
+  color: green;
+}
+
+/* Software and Sounds */
+
+.softwareSection {
+  background-color: #f5f5f5;
+
+}
+
+.softwareSectionPart1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 16px;
+  gap: 2rem;
+}
+
+.softwareSectionPart1 h2 {
+  margin-top: 5rem;
+}
+
+.softwareSectionPart1 p {
+  text-align: center;
+  width: 50%;
+}
+
+.softwareSectionPart1 button {
+  background-color: #3e3e3e;
+  color: white;
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* MusicProduction */
+.musicProduction {
+  margin-top: 10rem;
+  background: url(https://ni.directus.app/assets/0e57debf-367e-4d87-bd70-e0d9f4571954) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  padding: 5rem;
+}
+
+.musicProduction h1 {
+  font-size: 3rem;
+  padding: 2rem;
+  width:40%;
+}
+
+.musicProduction p {
+  font-size: 1.5rem;
+  padding: 2rem;
+  width: 40%;
+}
+
+
+.lastthings {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.eachDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lastthings h1 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.lastthings p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 68%;
+  line-height: 1.5;
+}
+
