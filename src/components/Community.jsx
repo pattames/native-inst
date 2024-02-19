@@ -3,7 +3,7 @@ import style from "../components/modules/Community.module.css"
 export default function Community() {
   return (
     <>
-    <header>
+    <header className={style.commheader}>
       <h2 className={style.heading}>Community</h2>
       <p className={style["first-paragraph"]}>
       Join the growing Native Instruments community. Meet like-minded producers and get tips and support from other users on the forum. Read the latest stories from our creators on the blog, discover our Artist Board, connect with us on social media, and dive into a vast palette of sonic tools in our user libraries.
