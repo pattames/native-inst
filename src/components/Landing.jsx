@@ -26,11 +26,11 @@ export default function Landing() {
     <>
       <Navbar />
       <div className={styles.hero}>
-        <video src="../public/Trimmed.mp4"></video>
+        <video src="/Trimmed.mp4" autoPlay muted loop></video>
       </div>
       <div className={styles.catalog}>
         {catalog.map((card) => (
-          <CatalogCard key={card.sys.id} catalog={catalog} />
+          <CatalogCard key={card.sys.id} card={card} />
         ))}
       </div>
       <div className={styles.products}></div>
